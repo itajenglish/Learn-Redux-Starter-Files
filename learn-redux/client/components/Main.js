@@ -4,9 +4,12 @@ import { Link } from 'react-router';
 const Main = React.createClass({
   render() {
     return (
-      <h1>
-      <Link to="/">Reduxstagram</Link>
-      </h1>
+      <div>
+        <h1>
+          <Link to="/">Reduxstagram</Link>
+        </h1>
+        {React.cloneElement(this.props.children, this.props)}
+      </div>
     )
   }
 })
