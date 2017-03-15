@@ -14,6 +14,7 @@ function posts(state = [], action) {
       ...state.slice(i + 1)// after the one we are updating
     ]
     default:
+    console.log('State would have updated')
     return state;
   }
 }
